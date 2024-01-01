@@ -33,51 +33,50 @@ class Main
       boolean play = true;
       while (play)
       {
-        // get user input and call game methods to play 
-        play = false;
+          // get user input and call game methods to play 
+          play = false;
       }
       */
 
-  public static void main(String[] args) 
-  {      
-    // welcome message
-    System.out.println("Welcome to EscapeRoom!");
-    System.out.println("Get to the other side of the room, avoiding walls and invisible traps,");
-    System.out.println("pick up all the prizes.\n");
-    
-    GameGUI game = new GameGUI();
-    game.createBoard();
+    public static void main(String[] args) 
+    {      
+        // welcome message
+        System.out.println("Welcome to EscapeRoom!");
+        System.out.println("Get to the other side of the room, avoiding walls and invisible traps,");
+        System.out.println("pick up all the prizes.\n");
 
-    // size of move
-    int m = 60; 
-    // individual player moves
-    int px = 0;
-    int py = 0; 
-    
-    int score = 0;
+        GameGUI game = new GameGUI();
+        game.createBoard();
 
-    Scanner in = new Scanner(System.in);
-    String[] validCommands = { "right", "left", "up", "down", "r", "l", "u", "d",
-    "jump", "jr", "jumpleft", "jl", "jumpup", "ju", "jumpdown", "jd",
-    "pickup", "p", "quit", "q", "replay", "help", "?"};
-  
-    // set up game
-    boolean play = true;
-    while (play)
-    {
-      /* TODO: get all the commands working */
-	  /* Your code here */
-    
-      
+        // size of move
+        int m = 60; 
+        // individual player moves
+        int px = 0;
+        int py = 0; 
+
+        int score = 0;
+
+        Scanner in = new Scanner(System.in);
+        String[] validCommands = { "right", "left", "up", "down", "r", "l", "u", "d",
+        "jump", "jr", "jumpleft", "jl", "jumpup", "ju", "jumpdown", "jd",
+        "pickup", "p", "quit", "q", "replay", "help", "?"};
+
+        // set up game
+        boolean play = true;
+        while (play)
+        {
+            /* TODO: get all the commands working */
+            /* Your code here */
+
+
+        }
+
+
+
+        score += game.endGame();
+
+        System.out.println("score=" + score);
+        System.out.println("steps=" + game.getSteps());
     }
-
-  
-
-    score += game.endGame();
-
-    System.out.println("score=" + score);
-    System.out.println("steps=" + game.getSteps());
-  }
 }
 
-        
