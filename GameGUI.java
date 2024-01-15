@@ -385,7 +385,7 @@ public class GameGUI extends JComponent
     // add (invisible) traps
     for (Rectangle t : traps)
     {
-      g2.setPaint(Color.WHITE); 
+      g2.setPaint(Color.LIGHT_GRAY); 
       g2.fill(t);
     }
 

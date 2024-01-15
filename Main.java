@@ -26,17 +26,7 @@ class Main
       //    end: reach the far right wall, score increase, game ends, if game ended without reaching far right wall, penalty
       //    replay: shows number of player steps and resets the board, you or another player can play the same board
       // Note that you must adjust the score with any method that returns a score
-      // Optional: create a custom image for your player use the file player.png on disk
-    
-      /**** provided code:
-      // set up the game
-      boolean play = true;
-      while (play)
-      {
-          // get user input and call game methods to play 
-          play = false;
-      }
-      */
+
 
     public static void main(String[] args) 
     {      
@@ -50,11 +40,11 @@ class Main
 
         // size of move
         int m = 60; 
-        // individual player moves
-        int px = 0;
-        int py = 0; 
-
         int score = 0;
+        // you may or may not need the following
+        // to represent the players distance to move
+        int distToMoveX = 0;
+        int distToMoveY = 0;
 
         Scanner in = new Scanner(System.in);
         String[] validCommands = { "right", "left", "up", "down", "r", "l", "u", "d",
@@ -72,11 +62,10 @@ class Main
         }
 
 
+        // TODO
+        // end the game
+        // show the score and the 'steps'
 
-        score += game.endGame();
-
-        System.out.println("score=" + score);
-        System.out.println("steps=" + game.getSteps());
     }
 }
 
