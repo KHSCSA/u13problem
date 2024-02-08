@@ -13,7 +13,7 @@ import java.util.Scanner;
      * returned. 
      * <P>
      * Example usage:
-     * String input = User.getValidInput("yes", "no", "y", "n");
+     * String input = UserInput.getValidInput("yes", "no", "y", "n");
      * <P>
      * Only yes, no, y, and n are valid inputs. If the user types anything
      * else, they will be prompted to re-enter.
