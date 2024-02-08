@@ -9,14 +9,12 @@ import java.util.Scanner;
 
 /**
  * Create an escape room game where the player must navigate
- * to the other side of the screen in the fewest steps, while
- * avoiding obstacles and collecting prizes.
+ * to the other side of the screen, 
+ * while avoiding obstacles and collecting prizes.
  */
 class Main
 {
 
-      // describe the game with brief welcome message
-      // determine the size (length and width) a player must move to stay within the grid markings
       // Allow game commands:
       //    right, left, up, down: if you try to go off grid or bump into wall, score decreases
       //    jump over 1 space: you cannot jump over walls
@@ -30,6 +28,8 @@ class Main
 
     public static void main(String[] args) 
     {      
+        Scanner sc = new Scanner(System.in);
+
         // welcome message
         System.out.println("Welcome to EscapeRoom!");
         System.out.println("Get to the other side of the room, avoiding walls and invisible traps,");
@@ -41,12 +41,12 @@ class Main
         // size of move
         int m = 60; 
         int score = 0;
+
         // you may or may not need the following
         // to represent the players distance to move
         int distToMoveX = 0;
         int distToMoveY = 0;
-
-        Scanner in = new Scanner(System.in);
+        
         String[] validCommands = { "right", "left", "up", "down", "r", "l", "u", "d",
         "jump", "jr", "jumpleft", "jl", "jumpup", "ju", "jumpdown", "jd",
         "pickup", "p", "quit", "q", "replay", "help", "?"};
@@ -59,13 +59,17 @@ class Main
             /* Your code here */
 
 
-        }
+        } // close while (gameplay)
 
 
         // TODO
         // end the game
         // show the score and the 'steps'
 
-    }
-}
+    } // close main
+
+    // helper functions??
+
+
+} // close Main
 
