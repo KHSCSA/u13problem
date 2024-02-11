@@ -5,7 +5,7 @@
 * 10/10/2019
 * Copyright(c) 2019 PLTW to present. All rights reserved
 */
-import java.util.Scanner;
+
 
 /**
  * Create an escape room game where the player must navigate
@@ -28,7 +28,6 @@ class Main
 
     public static void main(String[] args) 
     {      
-        Scanner sc = new Scanner(System.in);
 
         // welcome message
         System.out.println("Welcome to EscapeRoom!");
