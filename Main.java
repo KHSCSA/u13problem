@@ -18,7 +18,7 @@ class Main
       // Allow game commands:
       //    right, left, up, down: if you try to go off grid or bump into wall, score decreases
       //    jump over 1 space: you cannot jump over walls
-      //    if you land on a trap, spring a trap to increase score: you must first check if there is a trap, if none exists, penalty
+      //    if you land on a trap, spring a trap to increase score
       //    pick up prize: score increases, if there is no prize, penalty
       //    help: display all possible commands
       //    end: reach the far right wall, score increase, game ends, if game ended without reaching far right wall, penalty
