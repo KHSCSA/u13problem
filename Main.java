@@ -40,11 +40,6 @@ class Main
         // size of move
         int m = 60; 
         int score = 0;
-
-        // you may or may not need the following
-        // to represent the players distance to move
-        int distToMoveX = 0;
-        int distToMoveY = 0;
         
         String[] validCommands = { "right", "left", "up", "down", "r", "l", "u", "d",
         "jump", "jr", "jumpleft", "jl", "jumpup", "ju", "jumpdown", "jd",

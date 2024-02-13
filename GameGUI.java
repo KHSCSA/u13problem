@@ -191,19 +191,18 @@ public class GameGUI extends JComponent
   }
 
   /**
-   * Check the space adjacent to the player for a trap. The adjacent location is one space away from the player, 
-   * designated by newx, newy.
+   * Check the space adjacent to the player for a trap.
    * <P>
-   * precondition: newx and newy must be the amount a player regularly moves, otherwise an existing trap may go undetected
+   * precondition: incrx and incry must be the amount a player regularly moves, otherwise an existing trap may go undetected
    * <P>
-   * @param newx a location indicating the space to the right or left of the player
-   * @param newy a location indicating the space above or below the player
+   * @param incrx a location indicating the space to the right or left of the player
+   * @param incry a location indicating the space above or below the player
    * @return true if the new location has a trap that has not been sprung, false otherwise
    */
-  public boolean isTrap(int newx, int newy)
+  public boolean isTrap(int incrx, int incry)
   {
-    double px = playerLoc.getX() + newx;
-    double py = playerLoc.getY() + newy;
+    double px = playerLoc.getX() + incrx;
+    double py = playerLoc.getY() + incry;
 
 
     for (Rectangle r: traps)
