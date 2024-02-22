@@ -12,7 +12,7 @@
  * to the other side of the screen, 
  * while avoiding obstacles and collecting prizes.
  */
-class Main
+class EscapeRoomRunner
 {
 
       // Allow game commands:

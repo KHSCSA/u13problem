@@ -70,19 +70,19 @@ public class GameGUI extends JComponent
   {
     
     try {
-      bgImage = ImageIO.read(new File("images/grid.png"));      
+      bgImage = ImageIO.read(new File("u13problem/images/grid.png"));      
     } catch (Exception e) {
       System.err.println("Could not open file grid.png");
     }      
     try {
-      prizeImage = ImageIO.read(new File("images/coin.png"));      
+      prizeImage = ImageIO.read(new File("u13problem/images/coin.png"));      
     } catch (Exception e) {
       System.err.println("Could not open file coin.png");
     }
   
     // player image, student can customize this image by changing file on disk
     try {
-      player = ImageIO.read(new File("images/player.png"));      
+      player = ImageIO.read(new File("u13problem/images/player.png"));      
     } catch (Exception e) {
      System.err.println("Could not open file player.png");
     }
